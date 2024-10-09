@@ -1,10 +1,11 @@
 ﻿#include <stdio.h>
 #include "task1.h"
 #include "task2.h"
+#include "task3.h"
 
 int main(void)
 {
-    char s[100] = "testing string";
-    str_reverse(s);
-    printf("%s", s);
+    int a = 100, b = 200;
+    swap(&a, &b);
+    printf("a: %d, b: %d", a, b);
 }
