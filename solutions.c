@@ -3,8 +3,9 @@
 #include "task2.h"
 #include "task3.h"
 #include "task4.h"
+#include "task5.h"
 
 int main()
 {
-    task4();
+    task5();
 }
