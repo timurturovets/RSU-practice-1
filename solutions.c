@@ -1,14 +1,13 @@
-﻿#include <stdio.h>
-#include "task1.h"
-#include "task2.h"
-#include "task3.h"
+﻿#pragma once
+#include <stdio.h>
 #include "task4.h"
 #include "task5.h"
 #include "task6.h"
 //#include "task7.h"
-#include "task8.h"
+//#include "task8.h"
+#include "task9.h"
 
 int main()
 {
-    task8();
+    task9();
 }

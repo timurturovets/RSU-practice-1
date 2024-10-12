@@ -1,13 +1,9 @@
+#pragma once
 #include <stdio.h>
-
-void print_arr(int arr[], int len) {
-	for (int i = 0; i < len; i++) {
-		printf("%d ", arr[i]);
-	}
-}
+#include "arrays.h"
 
 void task7() {
-	int array[15] = { 52, 4, 3, 6, 7, 8, 7, 5, 3, 10, 55, 41, 5, 6, -52 }, 
+	int array[15] = { 52, 4, 3, 6, 7, 8, 7, 5, 3, 10, 55, 41, 5, 6, -52 },
 		new_arr[8];
 
 	printf("Array:\n");
@@ -18,7 +14,7 @@ void task7() {
 		new_arr[j] = array[i];
 		j++;
 	}
-	
+
 	printf("\nNew array:\n");
 	print_arr(new_arr, 8);
 }

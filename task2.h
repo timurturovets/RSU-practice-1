@@ -1,3 +1,4 @@
+#pragma once
 #include <string.h>
 
 void str_reverse(char* str) {
@@ -11,4 +12,3 @@ void str_reverse(char* str) {
 		start++; end--;
 	}
 }
-

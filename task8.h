@@ -1,5 +1,6 @@
+#pragma once
 #include <stdio.h>
-#include "task7.h"
+#include "arrays.h"
 
 void task8() {
 	int array[15] = { 77, 60, 49, 88, -101, 32, 40, 0, 9, 10, 5, -6, -12, 14, 18 },
