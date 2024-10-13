@@ -39,3 +39,22 @@ void bubble_sort_d(double a[], int n) {
 		}
 	}
 }
+
+int** make_matrix(int rows, int cols) {
+    int** matrix = (int**) malloc(rows * sizeof(int));
+    int i;
+    for(i = 0; i < rows; i++) {
+        matrix[i] = (int*) malloc(cols * sizeof(int));
+    }
+    return matrix;
+}
+
+void print_matrix(int* matrix[], int rows, int cols) {
+    int i, j;
+    for(i = 0; i < rows; i++) {
+        for(j = 0; j < cols; j++) {
+            printf("%d\t", matrix[i][j]);
+        }
+        printf("\n");
+    }
+}
