@@ -7,7 +7,9 @@
 #include "task9.h"
 #include "task10.h"
 #include "task11.h"
+#include "task12.h"
+
 int main()
 {
-    task10();
+    task12();
 }
