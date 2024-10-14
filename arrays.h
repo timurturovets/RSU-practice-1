@@ -1,3 +1,4 @@
+#pragma once
 #include <stdio.h>
 // TODO: polymorphism
 
@@ -40,7 +41,7 @@ void bubble_sort_d(double a[], int n) {
 	}
 }
 
-int** make_matrix(int rows, int cols) {
+static inline int** make_matrix(int rows, int cols) {
     int** matrix = (int**) malloc(rows * sizeof(int));
     int i;
     for(i = 0; i < rows; i++) {
@@ -49,12 +50,22 @@ int** make_matrix(int rows, int cols) {
     return matrix;
 }
 
-void print_matrix(int* matrix[], int rows, int cols) {
+void print_matrix(int** matrix, int rows, int cols) {
     int i, j;
     for(i = 0; i < rows; i++) {
         for(j = 0; j < cols; j++) {
             printf("%d\t", matrix[i][j]);
         }
         printf("\n");
+    }
+}
+
+void fill_matrix(int** matrix, int rows, int cols) {
+    int i, j;
+    for(i = 0; i < rows; i++) {
+        for(j = 0; j < cols; j++) {
+            printf("Row %d, column %d: ", i + 1, j + 1);
+            scanf_s("%d", &matrix[i][j]);
+        }
     }
 }

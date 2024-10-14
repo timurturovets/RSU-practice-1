@@ -41,12 +41,7 @@ void task6() {
     int** matrix = make_matrix(N, N);
 
     printf("Input elements of the matrix.\n");
-    for(i = 0; i < N; i++) {
-        for(j = 0; j < N; j++) {
-            printf("Row %d, column %d: ", i + 1, j + 1);
-            scanf_s("%d", &matrix[i][j]);
-        }
-    }
+    fill_matrix(matrix, N, N);
 
     printf("Your matrix:\n");
     print_matrix(matrix, N, N);
