@@ -1,7 +1,7 @@
 #pragma once
 #include <stdio.h>
+
 void task15() {
-    int i, j = 0;
     char* str, *ptr;
 
     printf("Input your string: ");
@@ -25,9 +25,4 @@ void task15() {
     *cpy = '\0';
     printf("Resulting string: ");
     puts(newstr);
-    i = 0;
-//    while(i < 10){
-//        printf("%d", i);
-//        i++;
-//    }
 }
