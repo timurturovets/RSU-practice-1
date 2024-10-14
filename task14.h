@@ -4,7 +4,7 @@
 
 void task14() {
     FILE* fptr = NULL;
-    fptr = fopen("D:\\Code\\solutions\\solutions\\example14.txt", "r");
+    fptr = fopen("path to your file", "r");
     int i = 0, len;
     fscanf(fptr, "%d", &len);
     // assuming the first integer in the file is the amount of array's elements
