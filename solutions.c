@@ -14,8 +14,10 @@
 #include "task17.h"
 #include "task18.h"
 #include "task19.h"
+#include "task20.h"
+#include "task21.h"
 
 int main()
 {
-    task19();
+    task21();
 }
