@@ -2,11 +2,15 @@
 #include <string.h>
 
 int to_dec(char* num, int b) {
-    int i, result = 0, len, value;
-
+    int i = 0, result = 0, len = strlen(num), value, sign = 1;
     char *digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    len = strlen(num);
-    for(i = 0; i < len; i++) {
+
+    if(num[0] == '-') {
+        sign = -1;
+        i++;
+    }
+
+    for(;i < len; i++) {
         value = strcspn(digits, &num[i]);
 
         if (i == len - 1) {
@@ -17,7 +21,7 @@ int to_dec(char* num, int b) {
         result += value;
         result *= b;
     }
-
+    result *= sign;
     return result;
 }
 
